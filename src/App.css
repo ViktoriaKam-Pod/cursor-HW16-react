@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body{
+  background: linear-gradient(56deg, rgb(10, 10, 10), #6f6a75);
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
 }
-
-.App-link {
-  color: #61dafb;
+.info-up{
+  display: flex;
+  flex-direction: row;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nickname, .date{
+  margin-left: 20px;
+  color: rgb(121, 117, 113);
+  align-self: center;
+  
+}
+.name, .iconCheckCircle{
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: larger;
+}
+.info-text{
+  color: antiquewhite;
+  margin-top: 5px;
+}
+.main-info{
+  width: clamp(700px, 30vw,  300px);
+}
+.main-image{
+  width: inherit;
+  border-radius: 10px;
+}
+.info-down{
+  color: rgb(121, 117, 113);
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-info{
+  display: flex;
+}
+.icon-info-p{
+  margin: 0;
+  font-size: small;
+  align-self: center;
 }
